@@ -1068,10 +1068,16 @@ a {
   color: #FFFFFF;
 }
 
+@media (max-width: 1199px) {
+  .center {
+    padding-left: calc(50% - 512px);
+    padding-right: calc(50% - 512px);
+  }
+}
 @media (max-width: 1024px) {
   .center {
-    padding-left: calc(50% - 393px);
-    padding-right: calc(50% - 393px);
+    padding-left: calc(50% - 384px);
+    padding-right: calc(50% - 384px);
   }
   .for__boxitem {
     height: 268px;
@@ -1109,12 +1115,6 @@ a {
     display: none;
   }
 }
-@media (max-width: 1199px) {
-  .center {
-    padding-left: calc(50% - 512px);
-    padding-right: calc(50% - 512px);
-  }
-}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -1123,10 +1123,10 @@ a {
   .top {
     background-image: url("img/Rectangle 15.jpg");
   }
-  .topcatalog {
+  .top__catalog {
     background-image: url("img/catalog fon  mobile.jpg");
   }
-  .topcart {
+  .top__cart {
     background-image: url("img/cart fon mobile.jpg");
   }
   .header {
