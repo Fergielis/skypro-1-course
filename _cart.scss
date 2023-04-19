@@ -1,0 +1,350 @@
+
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+.top__cart {
+    height: 400px;
+    background-image: url("img/cart\ top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title__cart {
+    margin-top: 127px;
+}
+
+.product__name_cart {
+    margin-bottom: 0;
+}
+.product__text_cart {
+    margin-bottom: 0;
+}
+
+
+.cart {
+    margin-top: 64px;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__content {
+        grid-column: span 8;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    
+
+    &__item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &_next {
+            padding-top: 32px;
+            padding-bottom: 50px;
+        }
+
+        &__link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+            &__a {
+            color: #000000;
+            text-decoration-line: underline;
+            &:hover {
+                color: #888888;
+                text-decoration-line: none;
+            }
+            }
+        }
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+        &__img {
+            width: 173px;
+            height: 173px;
+        }
+    }
+
+    &__info {
+        max-width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+}
+
+
+
+.price__item_cart {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #050505;
+    font-style: normal;
+}
+
+.cart {
+    &__item__number {
+        position: relative;
+        display: inline-block;
+        // width: 100px;
+    }
+
+    &__item__number input[type="number"] {
+        box-sizing: border-box;
+        -moz-appearance: textfield;
+        -webkit-appearance: textfield;
+        appearance: textfield;
+        width: 71px;
+        height: 51px;
+        background: #F7F6F6;
+        border-radius: 6px;
+        border: #CACDD8;
+        box-sizing: border-box;
+        padding-left: 25px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        line-height: 210%;
+        display: flex;
+        color: #000000;
+        appearance: none;
+        outline: none;
+    }
+    
+    &__item__number input[type="number"]::-webkit-outer-spin-button,
+    &__item__number input[type="number"]::-webkit-inner-spin-button {
+            display: none;
+    }
+    &__number-minus {
+        position: absolute;
+        left: 47px;
+        bottom: 6px;
+        display: block;
+        border: none;
+        font-weight: 600;
+        background: transparent;
+    }
+    &__number-plus {
+        position: absolute;
+        display: block;
+        border: none;
+        background: transparent;
+        font-weight: 600;
+        left: 47px;
+        top: 6px;
+    }
+
+    &__button {
+        display: flex;
+        gap: 7px;        
+        &__item {
+            width: 200px;
+            height: 37px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #020202;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            box-sizing: border-box;
+            background-color: transparent;
+            outline: none;
+            font-family: 'Montserrat';
+            transition: all .3s;
+            &:hover {
+                background: #000000;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.form__cart {
+    height: 556px;
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    background: #F7F6F6;
+    border-radius: 20px;
+    align-items: center;
+    // max-width: 376px;
+    // width: 376px;
+    // работает только с дисплей блок в мобайл
+}
+.form__heading_cart {
+    // font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding-top: 42px;
+    font-family: 'Montserrat';
+}
+.form {
+    &__block {
+        display: flex;
+        flex-direction: column;
+        width: 288px;
+        gap: 44px;
+        padding-top: 35px;
+        padding-bottom: 64px;
+    }
+    &__field {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #CACDD8;
+        outline: none;
+        padding-bottom: 3px;
+        font-family: 'Montserrat';
+        &_tel {
+            appearance: textfield;
+        }
+        &_tel::-webkit-outer-spin-button, 
+        &_tel::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+    &__field::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &__result {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+    }
+    &__button_cart {
+        margin-top: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        width: 290px;
+        height: 41px;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        background-color: transparent;
+        outline: none;
+        font-family: 'Montserrat';
+        transition: all .3s;
+        animation: heartbeat 5s ease-in-out 3s infinite both;
+        &:hover {
+            background: #000000;
+            color: #FFFFFF;
+        }
+    }
+}

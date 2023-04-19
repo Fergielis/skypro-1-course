@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+/* div top catalog page */
+.top {
+    height: 400px;
+    background-image: url(img/fon\ catalog.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.headerblock {
+    height: 77px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputheader {
+    width: 288px;
+    height: 41px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+}
+.inputheader::placeholder {
+    color: #FFFFFF;
+}
+.menu {
+    display: flex;
+    gap: 32px;
+}
+.menulink {
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.menulink:hover {
+    text-decoration: underline;
+}
+.title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 127px;
+    margin-bottom: 126px;
+    font-style: normal;
+    color: #FFFFFF;
+    max-width: 792px;
+}
+
+
+/* * section catalog * */
+.catalogcenter {
+    margin-top: 64px;
+}
+.catalognav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.breadcrumb {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.linkbreadcrumb {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000000;
+    text-decoration: none;
+}
+.breadcrumblist:hover .name {
+    text-decoration: underline;
+}
+.breadcrumblist:last-child:hover .name {
+    text-decoration: none;
+}
+.breadcrumblist:not(:last-child)::after {
+    content: "/";
+    text-decoration: none;
+    padding-right: 8px;  
+    padding-left: 8px; 
+}
+
+
+
+
+.select {
+    position: relative;
+    width: 288px;
+}
+.select::after {
+    content: "";
+    display: block;
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+    pointer-events: none;
+    background: url(img/arrow.svg) no-repeat;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+}
+.select select {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 41px;
+    box-sizing: border-box;
+    padding-left: 14px;
+    padding-right: 22px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+    background: none; /* убираем фон */
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+/* div в форме - sortbox */
+/* .sortbox {
+    position: relative;
+    width: 288px;
+}
+.sortbox::after {
+    content: '\25BC';
+    position: absolute;
+    font-size: 16px;
+    top: 4px;
+    right: 15px;
+    margin-top: 6px;
+    pointer-events: none;
+}
+select {
+    appearance: none;
+    width: 288px;
+    height: 41px;
+    box-sizing: border-box;
+    padding-left: 14px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    cursor: pointer;
+} */
+
+
+.catalogcontent {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 48px;
+    flex-wrap: wrap;
+}
+.catalog {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+}
+.productimage{
+    width: 100%;
+}
+.productname {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    font-style: normal;
+}
+.textproduct {
+    font-size: 14px;
+    line-height: 17px;
+    color: #888;
+    font-style: normal;
+    font-weight: 400;
+}
+.priceproduct {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #050505;
+    font-style: normal;
+}
+
+/* divbottomlink */
+.botlinkmore {
+    margin-top: 39px;
+    margin-bottom: 64px;
+
+}
+.linkbot {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+
+/* div bot */
+.bot {
+    background: #F7F6F6;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footercontent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 86px;
+    width: 792px;
+}
+.footerinfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 129px;
+}
+.footeritem {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.footerheading {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+    font-style: normal;
+}
+.linkfooter {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888;
+    text-decoration: none;
+}
+.linkfooter:hover {
+    text-decoration-line: underline;
+}
+.footericons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.textform {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.formemail {
+    background-color: #FFF;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #c4c4c4;
+    width: 275px;
+    height: 46px;
+    outline: none;
+    font-family: 'Montserrat';
+    display: block;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.formemail::placeholder {
+    color: #c4c4c4;
+}
+.buttonform {
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 275px;
+    height: 46px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
