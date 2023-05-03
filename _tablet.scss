@@ -1,7 +1,17 @@
+
+
+@media (max-width: 1199px) {
+    .center {
+        padding-left: calc(50% - 1024px/2);
+        padding-right: calc(50% - 1024px/2);
+    }
+
+}
+
 @media (max-width: 1024px) {
     .center {
-        padding-left: calc(50% - 786px/2);
-        padding-right: calc(50% - 786px/2);
+        padding-left: calc(50% - 768px/2);
+        padding-right: calc(50% - 768px/2);
     }
 
     .for__box {
@@ -44,10 +54,3 @@
     }
 }
 
-@media (max-width: 1199px) {
-    .center {
-        padding-left: calc(50% - 1024px/2);
-        padding-right: calc(50% - 1024px/2);
-    }
-
-}
